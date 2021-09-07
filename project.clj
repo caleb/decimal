@@ -3,8 +3,8 @@
   :url "https://github.com/funcool/decimal"
   :license {:name "BSD (2-Clause)"
             :url "http://opensource.org/licenses/BSD-2-Clause"}
-  :dependencies [[org.clojure/clojure "1.8.0" :scope "provided"]
-                 [org.clojure/clojurescript "1.7.228" :scope "provided"]]
+  :dependencies [[org.clojure/clojure "1.11.0-alpha1" :scope "provided"]
+                 [org.clojure/clojurescript "1.10.879" :scope "provided"]]
   :deploy-repositories {"releases" :clojars
                         "snapshots" :clojars}
   :source-paths ["src" "assets"]
