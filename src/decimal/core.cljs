@@ -1,12 +1,12 @@
 (ns decimal.core
-  (:require [decimal.extern.decimaljs])
+  (:require ["decimal.js/decimal.mjs" :as decimaljs])
   (:refer-clojure :exclude [> >= < <= neg? pos? integer? zero? = / - + * max min mod]))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Constants & Config
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(def ^:static +decimal+ (js/Decimal.noConflict))
+(def ^:static +decimal+ (.. decimaljs -.default -.noConflict))
 (def ^:dynamic *decimal* +decimal+)
 
 (def round-mapping
