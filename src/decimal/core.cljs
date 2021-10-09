@@ -6,7 +6,7 @@
 ;; Constants & Config
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(def ^:static +decimal+ (.. decimaljs -.default))
+(def ^:static +decimal+ (-.default decimaljs))
 (def ^:dynamic *decimal* +decimal+)
 
 (def round-mapping
