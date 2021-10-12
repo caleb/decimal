@@ -1,5 +1,5 @@
 (ns decimal.core
-  (:require ["decimal.js/decimal.mjs" :as decimaljs])
+  (:require ["decimal.js" :as decimaljs])
   (:refer-clojure :exclude [> >= < <= neg? pos? integer? zero? = / - + * max min mod]))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
